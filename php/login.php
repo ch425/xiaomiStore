@@ -1,25 +1,29 @@
 <?php
-	$username = $_POST['user-inp'];
-	$userpwd = $_POST['pwd-inp'];
-	$conn = new mysqli("localhost","root","","user_info","3306");
-	if(!$conn){
-		echo "连接失败";
-	}
-	
-	//	设置字符集
-	$conn -> query("SET CHARACTER SET 'utf8'");//读库 
-    $conn -> query("set names 'utf8'"); //写库
-	// 	从数据库中查找所有的数据
-    $selectsql = "select password from userinfo_db where name = '$username'";
+    // 获取用户名
+    header("Content-Type: application/json");
+
+    header("Access-Control-Allow-Origin:*");
+
+    // 引用另外一个文件
+    include "connect_db.php";
+
     
-     // 执行sql语句
-    $result = $conn -> query($sql);
-     // 找到返回关联数组， 找不到返回null, 是一条数据
-    $rows = $result -> fetch_assoc();
-    // var_dump($rows);
-    if($result -> num_rows > 0) {
-        echo "1";
-    }else{
-        echo "0";
+    // 或去json数据, 请求主体的格式为json格式
+    $json = json_decode(file_get_contents("php://input"));
+    $username = $json -> username;
+    $password = $json -> password;
+    // 链接数据库
+    $coon = new db();
+    $sql = "select * from shop_user WHERE name='$username' and  password='$password'";
+    $rows = $coon -> Query($sql, 2);
+    if($rows) {
+      // 用户输入正确
+      $arr = array("code" => "200", "msg"=>"", "data"=>array("id"=>$rows["id"], "token"=>"1234567899", "atavar"=> "http://www.aaa.com/path/a.png"));
+    } else {
+      // 输入错误
+      $arr = array("code" => "1000", "msg" => "用户名或密码输入错误");
     }
-?>
+    echo json_encode($arr);
+
+   
+  ?>

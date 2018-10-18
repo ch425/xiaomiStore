@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,9 @@
 	<title>小米账号-登录</title>
 	<link rel="shortcut icon" href="img/xiaomi.ico" />
 	<link rel="stylesheet" href="css/cssReset.css" />
-	<link rel="stylesheet" href="css/login.css" />
+	<link rel="stylesheet" href="css/public.css" />
 </head>
+
 <body>
 	<div class="wriper">
 		<div class="head">
@@ -18,26 +20,78 @@
 			<div class="panel">
 				<div class="login">
 					<div class="title">
-						<li><h1>账号登录</h1></li>
-						<li><h1>扫码登录</h1></li>
+						<li>
+							<h1 class="active id">账号登录</h1>
+						</li>
+						<li>
+							<h1 class="Code">扫码登录</h1>
+						</li>
 					</div>
-					<form class="login-main" method="post">
-						<input type="text" class="user-inp" name="user-inp" placeholder="邮箱/手机号码/小米ID"/>
-						<input type="password" class="pwd-inp" name="pwd-inp" placeholder="密码"/>
-						<input type="text" class="code" name="code" placeholder="请输入验证码"><span class="_code">1234</span>
-						<button class="loginBtn">登录</button>
-					</form>
+					<div class="form">
+						<form class="login-main" onsubmit="return false">
+							<p><input type="text" class="user-inp" name="user-inp" required="required" placeholder="邮箱/手机号码/小米ID" />
+								<span class="username-tip">* 输入6-13位数字下划线用户名</span></p>
+							<p><input type="password" class="pwd-inp" name="pwd-inp" required="required" placeholder="密码" />
+								<span class="password-tip">* 输入6-13位数字下划线密码</span></p>
+							<p><input type="text" class="code" name="code" required="required" placeholder="请输入验证码"><span class="_code">&nbsp;&nbsp;&nbsp;&nbsp;</span></p>
+							<p class="tip"><span>* 输入的用户名或密码不正确,请重新输入!</span></p>
+							<button class="loginBtn">登录</button>
+						</form>
+						<div class="other-panel">
+							<a href="#"><span class="tellogin">手机短信登录/注册</span></a>
+							<p class="link">
+								<a href="register.html"><span>立即注册</span></a>
+								<span>|</span>
+								<a href="register.html"><span>忘记密码?</span></a>
+							</p>
+						</div>
+						<div class="other-login">
+							<div class="other-title">
+								<hr style="width: 100%">
+								<span class="other">其他方式登录</span>
+							</div>
+							<div class="icon">
+								<a href="#"><i class="qq"></i></a>
+								<a href="#" class="weibo"><i></i></a>
+								<a href="#" class="zhifubao"><i></i></a>
+								<a href="#" class="weixin"><i></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="Codepanel">
+						<div class="getCode">
+							<img src="img/code.png" alt="">
+						</div>
+						<p>使用<font style="color: coral">小米商城APP</font>扫一扫</p>
+						<p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		<div class="foot">
+			<div class="language">
+				<li><a href="#">简体</a></li>
+				<li><a href="#">繁体</a></li>
+				<li><a href="#">English</a></li>
+				<li><a href="#">常见问题</a></li>
+				<li><a href="#">隐私政策</a></li>
+			</div>
+			<div class="copyright">
+				<p>
+					小米公司版权所有-京ICP备10046444-<img src="img/ghs.png" style="display: inline;">京公网安备11010802020134号-京ICP证110507号
+				</p>
+			</div>
+		</div>
 	</div>
-	
-	
+
+
 	<script src="js/Ajax.js"></script>
+	<script src="js/jquery.js"></script>
 	<script src="js/login.js"></script>
 	<script>
-		sendAjax("php/login.php");
+		// sendAjax("php/login.php");
 		login.init();
 	</script>
 </body>
+
 </html>
