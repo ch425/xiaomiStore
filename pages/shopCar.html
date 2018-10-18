@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>我的购车 - 小米商城</title>
+	<link rel="shortcut icon" href="../img/xiaomi.ico">
+	<link rel="stylesheet" type="text/css" href="../css/cssReset.css" />
+	<link rel="stylesheet" type="text/css" href="../css/shopCar.css" />
+	<link rel="stylesheet" type="text/css" href="../css/footer-public.css" />
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_864093_ut5o5xa3os.css">
+</head>
+
+<body>
+	<div class="plant">
+		<span class="mb"></span>
+		<!--header-->
+		<div class="header">
+			<div class="header_panel">
+				<div class="logo">
+					<a href="../index.html" title="小米官网"></a>
+				</div>
+				<div class="title">
+					<h2>我的购物车</h2>
+				</div>
+				<div class="topbar-info">
+					<li>
+						<a href="../login.html">登录</a>
+					</li>
+					<span class="cutline">|</span>
+					<li>
+						<a href="../register.html">注册</a>
+					</li>
+				</div>
+			</div>
+		</div>
+
+		<!--main-->
+		<div class="page_main">
+			<div class="carShowPanel">
+				<div class="carShowContainer">
+					<h2>您的购物车还是空的！</h2>
+					<p class="logo_tip">登录后将显示您之前加入的商品</p>
+					<a href="../login.html" class="loginBtn">立即登录</a>
+					<a href="../index.html" class="shopBtn">马上去购物</a>
+				</div>
+
+			</div>
+			<div class="carlist">
+				<div class="cartitle">
+					<div class="choose">
+						<input type="checkbox" id="all" class="chooseAll"> <label for="all">全选</label>
+					</div>
+					<div class="pro_img">
+						&nbsp;
+					</div>
+					<div class="pro_name">
+						商品名称
+					</div>
+					<div class="pro_price">
+						单价
+					</div>
+					<div class="pro_num">
+						数量
+					</div>
+					<div class="price_count">
+						小计
+					</div>
+					<div class="operation">
+						操作
+					</div>
+				</div>
+				<!-- <div class="shopshow">
+					<div class="shop_info">
+						<div class="chooseBox">
+							<span class="choosebox">√</span>
+						</div>
+						<div class="imgBox">
+							<img src="../img/80808080808080.jpg" alt="">
+						</div>
+						<div class="nameBox">
+							<h3 class="namebox">小米8 屏幕指纹版 8GB内存 透明 128GB</h3>
+						</div>
+						<div class="propriceBox">
+							<span class="propricebox">3599</span>元
+						</div>
+						<div class="numberBox">
+							<div class="numberbox">
+								<a href="javascript:void(0)" class="subtract">&#8211;</a>
+								<input type="text" class="num" value="1" data-num="1" data-buylimit="1" autocomplete="off">
+								<a href="javascript:void(0)" class="add">&#43;</a>
+							</div>
+						</div>
+						<div class="totalBox">
+							<span class="totalbox">3599</span>元
+						</div>
+						<div class="operationBox">
+							<span class="cancel">×</span>
+						</div>
+					</div>
+					
+				</div> -->
+				<div class="car_tip">
+					<div class="car_tip_container">
+						<div class="car_tip_close">×</div>
+						<div class="tip_text">
+							<h3>确定删除吗?</h3>
+						</div>
+						<div class="btnBox">
+							<button class="no">取消</button>
+							<button class="yes">确定</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="separate"></div>
+				<div class="carbar">
+					<div class="carbar_left">
+						<a href="#">继续购物</a>
+						<span class="cart_total">
+							共
+							<span class="shopNum">0</span>
+							件商品 , 已选择
+							<span class="chooseNum">0</span>
+							件
+						</span>
+					</div>
+					<span class="active_money">
+						活动优惠 : 减 <i class="activeMoney">0</i>元
+					</span>
+					<span class="price_total">
+						合计:
+						<span class="priceTotal">
+							0
+						</span>元
+					</span>
+					<a href="javascript:void(0)" class="primary_btn">
+						去结算
+					</a>
+				</div>
+			</div>
+			<h2>
+				<span>为您推荐</span>
+			</h2>
+			<div class="recommend">
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+				<div class="shopItem">
+					<img src="../img/pms_1522034061.jpg" />
+					<p class="name">红米6A 全网通版 3GB内存 32GB</p>
+					<p class="price">649元</p>
+					<p class="comment">2046好评</p>
+					<a href="#" class="addCar">加入购物车</a>
+				</div>
+			</div>
+		</div>
+
+		<!--footer-->
+		<div class="site-footer">
+			<div class="footer_container">
+				<div class="foot-service">
+					<li>
+						<a href="#"><i class="icon xiaomi-xiuli0"></i>预约维修服务</a>
+					</li>
+					<li>
+						<a href="#"><i class="icon xiaomi-sevenday"></i>7天无理由退货</a>
+					</li>
+					<li>
+						<a href="#"><i class="icon xiaomi-15tianmianfeihuanhuo24px"></i>15天免费换货</a>
+					</li>
+					<li>
+						<a href="#"><i class="icon xiaomi-gift"></i>满150包邮</a>
+					</li>
+					<li>
+						<a href="#"><i class="icon xiaomi-dizhi"></i>520余家售后网点</a>
+					</li>
+				</div>
+				<div class="footer-link">
+					<li>
+						<dt>帮助中心</dt>
+						<dd>账户管理</dd>
+						<dd>购物指南</dd>
+						<dd>订单操作</dd>
+					</li>
+					<li>
+						<dt>服务支持</dt>
+						<dd>售后政策</dd>
+						<dd>自助服务</dd>
+						<dd>相关下载</dd>
+					</li>
+					<li>
+						<dt>线下门店</dt>
+						<dd>小米之家</dd>
+						<dd>服务网点</dd>
+						<dd>授权体验店</dd>
+					</li>
+					<li>
+						<dt>关于小米</dt>
+						<dd>了解小米</dd>
+						<dd>加入小米</dd>
+						<dd>投资者关系</dd>
+					</li>
+					<li>
+						<dt>关注我们</dt>
+						<dd>新浪微博</dd>
+						<dd>官方微信</dd>
+						<dd>联系我们</dd>
+					</li>
+					<li>
+						<dt>特色服务</dt>
+						<dd>F码通道</dd>
+						<dd>礼物码</dd>
+						<dd>防伪查询</dd>
+					</li>
+					<li>
+						<p class="phone">400-100-5678</p>
+						<p>
+							<span>周一至周日 8:00-18:00</span><br />
+							<span>(仅收市话费)</span>
+						</p>
+						<a href="#" class="online">&#9743;联系客服</a>
+					</li>
+				</div>
+			</div>
+		</div>
+		<div class="site-info">
+			<div class="site-info-container">
+				<div class="info-container">
+					<div class="footer-logo"></div>
+					<div class="info-text">
+						<p>
+							<a href="#">小米商城</a><span>|</span>
+							<a href="#">MIUI</a><span>|</span>
+							<a href="#">米家</a><span>|</span>
+							<a href="#">米聊</a><span>|</span>
+							<a href="#">多看</a><span>|</span>
+							<a href="#">游戏</a><span>|</span>
+							<a href="#">路由器</a><span>|</span>
+							<a href="#">米粉卡</a><span>|</span>
+							<a href="#">政企服务</a><span>|</span>
+							<a href="#">小米天猫店</a><span>|</span>
+							<a href="#">隐私政策</a><span>|</span>
+							<a href="#">问题反馈</a><span>|</span>
+							<a href="#">廉政举报</a><span>|</span>
+							<a href="#">Select Region</a>
+						</p>
+						<p>
+							&#169; <a href="#">mi.com</a>
+							京ICP证110507号 <a href="#">京ICP备10046444号</a>
+							<a href="#">京公网安备11010802020134号 </a>
+							<a href="#">京网文[2017]1530-131号</a>
+							<a href="#">营业执照</a><br />
+							<span>违法和不良信息举报电话：185-0130-1238，本网站所列数据，除特殊说明，所有数据均出自我司实验室测试</span>
+						</p>
+					</div>
+					<div class="footer-links">
+						<a href="#"><img src="../img/truste.png" /></a>
+						<a href="#"><img src="../img/v-logo-1.png" /></a>
+						<a href="#"><img src="../img/v-logo-2.png" /></a>
+						<a href="#"><img src="../img/v-logo-3.png" /></a>
+						<a href="#"><img src="../img/ba10428a4f9495ac310fd0b5e0cf8370.png" /></a>
+					</div>
+				</div>
+				<div class="slogan"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="../js/jquery.js"></script>
+	<script src="../js/shopCar.js"></script>
+	<script>
+		shopCar.init();
+	</script>
+</body>
+
+</html>

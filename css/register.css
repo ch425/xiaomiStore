@@ -1,0 +1,331 @@
+.wriper{
+    width: 100%;
+    color: #333;
+    padding-top: 40px;
+    background-color: #f5f5f5;
+}
+h4{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+/* 主体开始 */
+.wriper .wriper_content{
+    width: 854px;
+    height: 611px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+/* .logo */
+.wriper .logo{
+    width: 100%;
+    height: 88px;
+    padding-bottom: 40px;
+    display: block;
+}
+.wriper .logo a{
+    display: inline-block;
+    width: 49px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    cursor: default;
+    background-color: #f56600;
+    background-image: url(../img/mi-logo.png);
+}
+
+
+.wriper .title{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    
+}
+.wriper .title h2{
+    font-size: 30px;
+    
+}
+
+/* 注册表单 */
+.wriper .form{
+    width: 332px;
+    height: 306px;
+    margin:0 auto;
+    padding: 30px 0;
+    line-height: 20px;
+}
+
+.wriper .country{
+    position: relative;
+    width: 332px;
+    height: 42px;
+    padding-left: 14px;
+    line-height: 42px;
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #e8e8e8;
+    color: #555;
+    cursor: pointer;
+}
+.wriper .country p{
+    float: left;
+    width: 275px;
+    font-size: 14px;
+    border-right: 1px solid #e8e8e8;
+    cursor: pointer;
+}
+.wriper .country .current{
+    float: right;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 20px;
+    margin: 0 11px;
+}
+.wriper .country .country_add {
+    width: 100%;
+    background: #fff;
+    height: 270px;
+    line-height: 30px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    z-index: 98;
+    display: none;
+}
+.wriper .country .country_add .search_inp1{
+    width: 274px;
+    height: 34px;
+    line-height: 22px;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #e0e0e0;
+}
+.wriper .country .country_add p{
+    display: block;
+    width: 100%;
+    background: #fcdecc;
+    padding-left: 10px;
+    margin-bottom: 6px;
+    line-height: 30px;
+    color: #ef5b00 !important;
+    cursor: auto;
+}
+.wriper .country .country_add ul li{
+    padding: 0 10px;
+    line-height: 39px;
+    clear: both;
+    overflow: hidden;
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+.wriper .country .country_add ul li:hover{
+    background-color: #e0e0e0;
+}
+.wriper .tip_text{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+.wriper .tel_panel {
+    position: relative;
+    width: 332px;
+    height: 78px;
+    line-height: 20px;
+}
+.wriper .tel_panel .list_panel{
+    width: 75px;
+    height: 42px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    border:  1px solid #e0e0e0;
+    border-right: none;
+
+}
+.wriper .tel_panel .list_panel .code{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 42px;
+    text-align: center;
+}
+.wriper .tel_panel .list_panel>i{
+    color: #555;
+}
+.wriper .tel_inp{
+    width: 257px;
+    height: 42px;
+    float: right;
+    padding-left: 10px;
+    border: 0.5px solid #e0e0e0;
+}
+.wriper .country_tel{
+    width: 332px;
+    background: #fff;
+    height: 270px;
+    line-height: 30px;
+    border: 1px solid #e8e8e8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    left: 0;
+    top: 41px;
+    z-index: 98;
+    display: none;
+    text-align: left;
+}
+.wriper .country_tel .search_inp2{
+    width: 274px;
+    height: 34px;
+    line-height: 22px;
+    padding: 5px 10px 5px 10px;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid #e0e0e0;
+}
+.wriper .country_tel p{
+    display: block;
+    width: 100%;
+    background: #fcdecc;
+    padding-left: 10px;
+    margin-bottom: 6px;
+    line-height: 30px;
+    color: #ef5b00 !important;
+    cursor: auto;
+}
+.wriper .country_tel ul li{
+    padding: 0 10px;
+    line-height: 39px;
+    clear: both;
+    overflow: hidden;
+    color: #000;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+.wriper  .country_tel ul li:hover{
+    background-color: #e0e0e0;
+}
+.wriper .country_add_tel .prefix {
+    float: right;
+    max-width: 20%;
+    color: #9d9d9d;
+}
+
+.wriper .btn{
+    width: 332px;
+    height: 42px;
+    margin: 0 auto;
+    text-align: center;
+}
+.wriper .btn a{
+    width: 330px;
+    height: 42px;
+    margin: 0 auto;
+    color: #ffffff;
+    line-height: 42px;
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    cursor: pointer;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    background-color: #f56600;
+    transition: all 0.5s;
+}
+.wriper .btn:hover{
+    opacity: 0.6;
+}
+.wriper .server_content{
+    height: 79px;
+    text-align: center;
+    padding-top: 40px;
+}
+.wriper .msg{
+    text-align: center;
+    color: #9d9d9d;
+    font-size: 14px;
+}
+.wriper .msg a{
+    color: #000;
+    font-weight: bold;
+}
+.wriper .msg img{
+    width: 100%;
+    height: 100%;
+    display:inline-block;
+}
+.wriper .msg span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    vertical-align: -5px; 
+    margin-right: 3px;
+    overflow: hidden;
+}
+.tip{
+    display: none;
+    color: #ef5b00;
+}
+.pwd{
+    margin-top: -10px;
+    margin-bottom:10px; 
+}
+.wriper label {
+    display: inline-block;
+    width: 54px;
+    font-size: 14px;
+    text-align: center;
+}
+.wriper .pwd_inp {
+    width: 274px;
+    height: 42px;
+    padding-left: 10px;
+    border: 0.5px solid #ddd;
+}
+
+
+/* foot */
+.wriper .foot {
+	position: relative;
+	top: 70px;
+	width: 100%;
+	height: 70px;
+	margin: 0 auto;
+	font-size: 14px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.wriper .foot .language li{
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid #999;
+}
+.wriper .foot .language li:last-child{
+    border: 0;
+}
+.wriper .foot .language li a {
+	color: #333;
+}
+.wriper .foot .copyright {
+	height: 44px;
+	line-height: 44px;
+	color: #B0B0B0;
+}

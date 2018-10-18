@@ -1,0 +1,287 @@
+.wriper{
+	width: 100%;
+	height: 100%;
+	background-color: #fefefe;
+}
+
+/*header*/
+.wriper .head{
+	width: 1130px;
+	height: 98px;
+	margin: 0 auto;
+}
+.wriper .head a{
+	display: inline-block;
+	width: 200px;
+	height: 98px;
+}
+
+/*main*/
+.wriper .main{
+    width: 100%;
+    height: 588px;
+	background: url(../img/4d52c587e6415f82684a881db27e3b01.jpg) no-repeat center center;
+	background-size: 180% 100%;
+}
+.wriper .main .panel {
+	position: relative;
+	width: 1130px;
+	height: 588px;
+	margin: 0 auto;
+}
+/*login-panel*/
+.wriper .main .panel .login{
+	position: absolute;
+	width: 410px;
+    height: 524px;
+    z-index: 10;
+    right: 0;
+	top: 34px;
+	font-size: 14px;
+    background-color: #fefefe;
+}
+.wriper .main .panel .login .title{
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.wriper .main .panel .login .title li{
+	width: 200px;
+	height: 27px;
+	line-height: 27px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wriper .main .panel .login .title li:nth-child(1) {
+	border-right: 2px solid #B0B0B0;
+}
+.wriper .main .panel .login h1 {
+	font-size: 24px;
+	cursor: pointer;
+}
+.wriper .main .panel .login .active, .wriper .main .panel .login h1:hover{
+	color: #f56600;
+}
+
+/* 表单登录start */
+.wriper .main .panel .login .login-main {
+	text-align: center;
+	margin-top: 10px;
+}
+.wriper .main .panel .login .login-main p{
+	display: inline-block;
+	width: 346px;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 12px;
+}
+.wriper .main .panel .login .login-main .user-inp,
+.wriper .main .panel .login .login-main .pwd-inp,
+.wriper .main .panel .login .login-main ._pwd-inp {
+	width: 346px;
+	height: 48px;
+	padding-left: 10px;
+	border:0.5px solid #B0B0B0;
+}
+.wriper .main .panel .login .login-main ._pwd-inp {
+	margin-bottom: 15px;
+}
+.wriper .main .panel .login .login-main .username-tip,
+.wriper .main .panel .login .login-main .password-tip{
+	display: inline-block;
+	height: 20px;
+	line-height: 20px;
+	color: coral;
+}
+
+/* 验证码 */
+.wriper .main .panel .login .login-main .code {
+	width: 160px;
+	height: 48px;
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+.wriper .main .panel .login .login-main ._code {
+	display: inline-block;
+	width: 160px;
+	font-size: 20px;
+	height: 48px;
+	line-height: 40px;
+	margin-bottom: 15px;
+	margin-left: 25px;
+	padding-left: 5px;
+	letter-spacing: 10px;
+	text-align: center;
+	cursor: pointer;
+	border: 1px solid #999;
+}
+/* 拖拽验证 */
+.wriper .main .panel .login .login-main .box {
+	position: relative;
+	width: 346px;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	color: #fff;
+	margin-bottom: 20px;
+	background-color: #999;
+}
+.wriper .main .panel .login .login-main .block{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	left: 0;
+	top: 0;
+	cursor: move;
+	background-color: #00d20d;
+}
+/* 错误提示 */
+.wriper .main .panel .login .login-main .tip {
+	display: inline-block;
+	height: 40px;
+	width: 346px;
+	text-align: left;
+	color: red;
+	display: none;
+	font-size: 12px;
+}
+
+
+.wriper .main .panel .login .login-main .loginBtn {
+	width: 348px;
+	height: 50px;
+	color: #fff;
+	border: none;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+	background-color: #ef5b00;
+}
+
+.wriper .main .panel .login .other-panel {
+	margin: 20px auto;
+	width: 346px;
+}
+.wriper .main .panel .login .other-panel .tellogin {
+	color: #ef5b00;
+}
+.wriper .main .panel .login .other-panel .link {
+	display: inline-block;
+	float: right;
+}
+.wriper .main .panel .login .other-panel .link a span{
+	color:#757575;
+}
+.wriper .main .panel .login .other-panel .link a span:hover{
+	color: #ef5b00;
+}
+
+/* 其他登录方式 */
+.wriper .main .panel .login .other-login {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	position: absolute;
+	width: 346px;
+	height: 100px;
+	right: 30px;
+	bottom: 0;
+}
+.wriper .main .panel .login .other-login .other-title {
+	width: 346px;
+	height: 20px;
+	text-align: center;
+	margin: 0 auto;
+}
+.wriper .main .panel .login .other-login .other{
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	top: 10px;
+	left: 120px;
+	text-align: center;
+	background-color: #fff;
+}
+.wriper .main .panel .login .other-login .icon a {
+	margin: 0 17px;
+}
+.wriper .main .panel .login .other-login .icon .qq{
+	
+}
+.wriper .main .panel .login .other-login .icon a i{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background:url(../img/icons_type.png) no-repeat center center;
+	background-size: 155px 25px;
+}
+.wriper .main .panel .login .other-login .icon a:nth-child(1) i {
+	background-position: -26px 1px;
+	background-color: #0288d1;
+}
+.wriper .main .panel .login .other-login .icon a:nth-child(2) i {
+	background-position: -53px 1px;
+	background-color: #d32f2f;
+}
+.wriper .main .panel .login .other-login .icon a:nth-child(3) i {
+	background-position: -81px 1px;
+	background-color: #0ae;
+}
+.wriper .main .panel .login .other-login .icon a:nth-child(4) i {
+	background-position: -124px 1px;
+	background-color: #00d20d;
+}
+/* 表单登录end */
+
+
+/* 扫码登录start */
+.wriper .main .panel .login .Codepanel {
+	width: 300px;
+	height: 300px;
+	margin: 60px auto;
+	display: none;
+}
+.wriper .main .panel .login .Codepanel .getCode {
+	text-align: center;
+	margin: 20px 0;
+}
+.wriper .main .panel .login .Codepanel .getCode img {
+	display: inline-block;
+}
+.wriper .main .panel .login .Codepanel {
+	text-align: center;
+	font-size: 12px;
+}
+.wriper .main .panel .login .Codepanel p {
+	line-height: 20px;
+}
+
+/* foot */
+.wriper .foot {
+	position: relative;
+	top: 70px;
+	width: 100%;
+	height: 70px;
+	margin: 0 auto;
+	font-size: 14px;
+	text-align: center;
+}
+.wriper .foot .language li{
+	display: inline-block;
+	padding: 0 10px;
+	border-right: 1px solid #999;
+}
+.wriper .foot .language li a {
+	color: #333;
+}
+.wriper .foot .copyright {
+	height: 44px;
+	line-height: 44px;
+	color: #B0B0B0;
+}

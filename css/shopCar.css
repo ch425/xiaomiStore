@@ -1,0 +1,613 @@
+.plant {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+h3{
+    font-size: 18px;
+}
+.mb{
+    width: 100%;
+    height: 1000px;
+    position: fixed;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+/*headerStart*/
+.plant .header {
+    width: 100%;
+    font-size: 12px;
+    border-bottom: 2px solid #ff6700;
+    background: #fff;
+    color: #b0b0b0;
+    padding-bottom: 26px;
+}
+
+.plant .header .header_panel {
+    width: 1226px;
+    height: 74px;
+    margin: 0 auto;
+}
+
+.plant .header .logo {
+    display: block;
+    width: 48px;
+    height: 48px;
+    float: left;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 26px;
+    margin-right: 45px;
+    background-color: #ff6700;
+}
+
+.plant .header .logo a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: url(../img/mi-logo.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.plant .header .logo a:hover {
+    background-image: url(../img/mi-home.png);
+}
+
+.plant .header .title {
+    float: left;
+    margin-top: 26px;
+}
+
+.plant .header h2 {
+    font-size: 28px;
+    line-height: 48px;
+    font-weight: normal;
+    color: #424242;
+}
+
+.plant .header .topbar-info {
+    float: right;
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    min-width: 72px;
+    font-size: 12px;
+    line-height: 40px;
+    margin-top: 30px;
+}
+
+.plant .topbar-info .cutline {
+    margin: 0 3px;
+}
+
+.plant .header .topbar-info a {
+    color: #212121;
+}
+
+/*headerEnd*/
+
+/*pageMainStart*/
+.plant .page_main {
+    width: 100%;
+    min-height: 1800px;
+    padding-top: 38px;
+    background-color: #f5F5f5;
+}
+
+/* 购物车没有商品时的样式 */
+.plant .page_main .carShowPanel {
+    width: 1226px;
+    height: 273px;
+    margin: 0 auto;
+    min-height: 273px;
+    margin-top: 20px;
+    padding-left: 558px;
+    color: #b0b0b0;
+    overflow: hidden;
+    background: url(../img/cart-empty.png) no-repeat 124px 0;
+    display: none;
+}
+
+.plant .page_main .carShowPanel .carShowContainer h2 {
+    margin: 70px 0 15px;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.plant .page_main .carShowPanel .carShowContainer p {
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #b0b0b0;
+}
+
+.plant .page_main .carShowPanel .carShowContainer .loginBtn {
+    display: inline-block;
+    margin-right: 10px;
+    width: 170px;
+    height: 48px;
+    line-height: 48px;
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.plant .page_main .carShowPanel .carShowContainer .loginBtn:hover {
+    background-color: #EF5B00;
+}
+
+.plant .page_main .carShowPanel .carShowContainer .shopBtn {
+    display: inline-block;
+    margin-right: 10px;
+    width: 170px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #f5f5f5;
+    color: #ff6700;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #ff6700;
+}
+
+/* 购物车有商品时的样式 */
+.plant .page_main .carlist {
+    width: 1226px;
+    margin: 0 auto;
+    min-height:257px;
+    background-color: #fff;
+}
+.plant .page_main .cartitle{
+    height: 70px;
+    line-height: 70px;
+    padding:10px 26px;
+    color: #424242;
+    
+}
+.plant .page_main .carlist .choose,
+.plant .page_main .carlist .pro_img,
+.plant .page_main .carlist .pro_name,
+.plant .page_main .carlist .pro_price,
+.plant .page_main .carlist .pro_num,
+.plant .page_main .carlist .price_count,
+.plant .page_main .carlist .operation{
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+}
+.plant .page_main .carlist .choose{
+    width: 84px;
+}
+.plant .page_main .carlist .pro_img{
+    width: 120px;
+}
+.plant .page_main .carlist .pro_name{
+    width: 380px;
+}
+.plant .page_main .carlist .pro_price{
+    width: 159px;
+    padding-right: 84px;
+    text-align: right;
+    color: #424242;
+}
+.plant .page_main .carlist .pro_num{
+    width: 150px;
+    text-align: center;
+    color: #424242;
+}
+.plant .page_main .carlist .price_count{
+    width: 172px;
+    padding-right: 81px;
+    margin-left:29px;
+    text-align: right;
+}
+.plant .page_main .carlist .operation{
+    width: 80px;
+    text-align: center;
+}
+.plant .page_main .carlist .choose .chooseAll{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #e0e0e0;
+    margin-right: 11px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+.select_active{
+    background-color: #EF5B00 !important;
+    border: none;
+    
+}
+.plant .page_main .carlist .shopshow{
+    width: 100%;
+    min-height: 117px;
+    padding: 15px 26px 15px 0;
+    border-top: 1px solid #e0e0e0;
+}
+.plant .shopshow .shop_info{
+    display: table-row;
+}
+.plant .shopshow .chooseBox{
+    display: table-cell;
+    width: 110px;
+    height: 80px;
+    line-height: 80px;
+}
+.plant .shopshow .choosebox{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid #e0e0e0;
+    margin-left: 24px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+.plant .shopshow .imgBox{
+    display: table-cell;
+    height: 120px;
+    height: 80px;
+    padding-right: 40px;
+    overflow: hidden;
+}
+.plant .shopshow img{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    vertical-align: middle;
+}
+.plant .shopshow .nameBox{
+    display: table-cell;
+    width: 380px;
+}
+.plant .shopshow .propriceBox{
+    display: table-cell;
+    vertical-align: middle;
+    width: 159px;
+    font-size: 16px;
+    padding-right: 84px;
+    text-align: right;
+    color: #424242;
+}
+.plant .shopshow .numberBox{
+    display: table-cell;
+    width: 150px;
+    text-align: center;
+    color: #424242;
+    font-size: 16px;
+    vertical-align: middle;
+}
+.plant .shopshow .numberbox{
+    width: 150px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    zoom: 1;
+}
+.plant .shopshow .subtract,
+.plant .shopshow .add {
+    float: left;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    color: #757575;
+    font-size: 20px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+.plant .shopshow .subtract:hover,
+.plant .shopshow .add:hover{
+    background-color: rgba(200, 200,200, 0.5);
+}
+.plant .shopshow .num{
+    float: left;
+    width: 72px;
+    height: 38px;
+    line-height: 38px;
+    padding: 0;
+    border-width: 0;
+    color: #424242;
+    font-size: 16px;
+    text-align: center;
+}
+.plant .shopshow .totalBox{
+    display: table-cell;
+    vertical-align: middle;
+    color: #ff6700;
+    font-size: 16px;
+    width: 201px;
+    padding-right: 81px;
+    text-align: right;
+}
+.plant .shopshow .operationBox{
+    display: table-cell;
+    vertical-align: middle;
+    width: 80px;
+    text-align: center;
+}
+.plant .shopshow .cancel{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    font-size: 23px;
+    cursor: pointer;
+    color: #757575;
+}
+.plant .shopshow .cancel:hover{
+    color: #ffffff;
+    background-color: #EF5B00;
+}
+.plant .separate{
+    width: 100%;
+    height: 20px;
+    background-color: #f5f5f5;
+}
+.plant .carbar{
+    width: 100%;
+    height: 50px;
+    color: #757575;
+    text-align: right;
+    background-color: #fff;
+    -webkit-transition: background .3s ease, top .3s ease;
+    transition: background .3s ease, top .3s ease;
+    position: relative;
+}
+.plant .carbar .carbar_left{
+    float: left;
+    padding-left: 32px;
+}
+.plant .carbar a{
+    color: #757575;
+    line-height: 50px;
+    transition: all 0.3s;
+}
+.plant .carbar a:hover{
+    color: #f40;
+}
+.plant .carbar .cart_total{
+    margin-left: 16px;
+    padding-left: 16px;
+    border-left: 1px solid #eee;
+}
+.plant .carbar .shopNum,
+.plant .carbar .chooseNum{
+    color: #f40;
+    font-size: 12px;
+    font-style: normal;
+}
+.plant .carbar .active_money{
+    padding: 0 13px;
+    border-right: 1px solid #eee;
+    color: #757575;
+    line-height: 50px;
+}
+.hide{
+    display: none;
+}
+.plant .carbar .price_total {
+    color: #ff6700;
+    padding-left: 13px;
+}
+.plant .carbar .price_total .priceTotal{
+    font-size: 30px;
+}
+.plant .carbar .primary_btn{
+    display: inline-block;
+    width: 200px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 50px;
+    vertical-align: top;
+    -webkit-transition: color .3s;
+    border: 1px solid #b0b0b0;
+    transition: color .3s;
+    background: #ff6700;
+    border-color: #ff6700;
+    color: #fff;
+}
+.plant .carbar .primary_btn:hover{
+    color: #ffffff;
+    background-color: #EF5B00;
+    opacity: 0.8;
+}
+
+.plant .car_tip{
+    position: fixed;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 100;
+    width: 500px;
+    height: 270px;
+    background-color: #fff;
+    top: -25%;
+    opacity: 0;
+    transition: all 0.4s ease;
+    display: none;
+}
+
+.plant .car_tip .car_tip_container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 60px 60px 40px;
+}
+.plant .car_tip .tip_text{
+    min-height: 130px;
+    color: #424242;
+    line-height: 50px;
+    text-align: center;
+}
+.plant .car_tip .tip_text h3{
+    font-size: 30px;
+}
+.plant .car_tip .btnBox button{
+    margin: 0 7px;
+    width: 160px;
+    height: 40px;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+.plant .car_tip .btnBox{
+    padding: 0 10px;
+}
+.plant .car_tip .btnBox .no {
+    background-color: #b0b0b0;
+    transition: all 0.4s;
+}
+.plant .car_tip .btnBox .no:hover{
+    background-color: #757575;
+}
+.plant .car_tip .btnBox .yes{
+    background-color: #ff6700;
+}
+.plant .car_tip .btnBox .yes:hover{
+    background-color: #f16406f6;
+}
+.plant .car_tip .car_tip_close{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    font-size: 26px;
+    font-weight: 600;
+    top: 20px;
+    right: 20px;
+    color: #757575;
+    cursor: pointer;
+    transition: background-color 0.4s;
+   
+}
+.plant .car_tip .car_tip_close:hover{
+    color: #fff;
+    background-color: #ff6700;
+}
+
+
+
+
+
+
+.plant .page_main>h2 {
+    position: relative;
+    width: 1226px;
+    margin: 0 auto;
+    margin-top: 120px;
+    height: 50px;
+    font-size: 30px;
+    font-weight: 400;
+    color: #757575;
+    border-top: 1px solid #e0e0e0;
+    -webkit-font-smoothing: antialiased;
+}
+
+.plant .page_main h2 span {
+    position: absolute;
+    top: -20px;
+    left: 372px;
+    height: 40px;
+    width: 482px;
+    line-height: 40px;
+    text-align: center;
+    display: block;
+    background-color: #f5f5f5;
+}
+
+.plant .page_main .recommend {
+    width: 1226px;
+    height: 1256px;
+    margin: 0 auto;
+}
+
+.plant .page_main .recommend .shopItem {
+    float: left;
+    width: 234px;
+    margin-bottom: 14px;
+    margin-right: 14px;
+    height: 300px;
+    font-size: 14px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.plant .page_main .recommend .shopItem:nth-child(5n) {
+    margin-right: 0;
+}
+
+.plant .page_main .recommend .shopItem img {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    margin-top: 40px;
+    margin-bottom: 14px;
+}
+
+.plant .page_main .recommend .shopItem p {
+    height: 28px;
+    line-height: 28px;
+}
+
+.plant .page_main .recommend .shopItem .price {
+    color: #f40;
+}
+
+.plant .page_main .recommend .shopItem .comment {
+    color: #757575;
+}
+
+.plant .page_main .recommend .addCar {
+    position: absolute;
+    left: 58px;
+    bottom: 15px;
+    width: 120px;
+    border: 1px solid #999;
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+.plant .page_main .recommend .shopItem:hover .addCar {
+    display: block;
+}
+
+.plant .page_main .recommend .addCar:hover {
+    color: #fff;
+    background-color: #ff6700;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+/*page_mainEnd*/

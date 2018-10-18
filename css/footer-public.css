@@ -1,0 +1,164 @@
+/*footerStart*/
+.plant .site-footer {
+	width: 100%;
+	height: 272px;
+	background: #fff;
+}
+.plant .site-footer .footer_container{
+	height: 80px;
+	width: 1226px;
+	margin: 0 auto;
+	padding: 27px 0;
+	border-bottom: 1px solid #ddd;
+}
+.plant .site-footer .footer_container .foot-service {
+	width: 1226px;
+	height: 60px;
+}
+.plant .site-footer .footer_container .foot-service li {
+	float: left;
+	width: 242px;
+	font-size: 16px;
+	line-height: 25px;
+	text-align: center;
+	border-left: 1px solid #ddd;
+}
+.plant .site-footer .footer_container .foot-service li i {
+	margin-right: 6px;
+    font-size: 24px;
+    line-height: 24px;
+    vertical-align: -4px;
+}
+.plant .site-footer .footer_container .foot-service li:first-child {
+	border-left: none;
+}
+.plant .site-footer .footer_container .foot-service li a{
+	color: #616161;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+.plant .site-footer .footer_container .foot-service li a:hover{
+	color: #f40;
+}
+.plant .site-footer .footer_container .footer-link {
+	height: 192px;
+	width: 1226px;
+	padding: 40px 0;
+}
+.plant .site-footer .footer_container .footer-link li {
+	float: left;
+	width: 160px;
+	height: 112px;
+}
+.plant .site-footer .footer_container .footer-link li dt {
+	margin: -1px 0 26px;
+    font-size: 14px;
+    line-height: 1.25;
+    color: #424242;
+}
+.plant .site-footer .footer_container .footer-link li dd {
+	margin: 10px 0 0;
+    font-size: 12px;
+    color: #757575;
+    cursor: pointer;
+}
+.plant .site-footer .footer_container .footer-link li dd:hover {
+	color: #FF4400;
+}
+.plant .site-footer .footer_container .footer-link li:last-child {
+	float: right;
+    width: 251px;
+    height: 112px;
+    border-left: 1px solid #e0e0e0;
+    text-align: center;
+    color: #616161;
+}
+.plant .site-footer .footer_container .footer-link li:last-child p {
+	margin: 0 0 16px;
+    font-size: 12px;
+}
+.plant .site-footer .footer_container .footer-link li:last-child .phone {
+	margin: 0 0 5px;
+    font-size: 22px;
+    line-height: 1;
+    color: #ff6700;
+}
+.plant .site-footer .footer_container .footer-link li:last-child .online {
+	display: inline-block;
+	width: 118px;
+    height: 28px;
+    font-size: 12px;
+    line-height: 28px;
+	padding: 0;
+    margin: 0;
+    border: 1px solid #b0b0b0;
+    border-color: #ff6700;
+    background: #fff;
+    color: #ff6700;
+    transition: all .4s;
+}
+.plant .site-footer .footer_container .footer-link li:last-child .online:hover {
+	color: #fff;
+	background-color: #ff6700;
+}
+.plant .site-info {
+	width: 100%;
+	height: 166px;
+	padding: 30px 0;
+    font-size: 12px;
+    background: #fafafa;
+}
+.plant .site-info .site-info-container {
+	width: 1226px;
+	height: 106px;
+	margin: 0 auto;
+	/*background: grey;*/
+}
+
+.plant .site-info .site-info-container .info-container {
+	width: 1226px;
+	height: 56px;
+}
+.plant .site-info .footer-logo {
+    width: 57px;
+    height: 57px;
+    margin-right: 10px;
+	display: block;
+    float: left;
+    background: url(../img/mi-logo.png) no-repeat center center;
+    background-size: 100% 100%;
+    background-color: #ff6700;
+}
+.plant .site-info .info-text {
+	float: left;
+    color: #b0b0b0;
+    line-height: 18px;
+}
+.plant .site-info .info-text a {
+	color: #757575;
+}
+.plant .site-info .info-text a:hover{
+	color: #FE6606;
+}
+.plant .site-info .footer-links {
+	float: right;
+    height: 28px;
+    margin: 4px 0 0;
+}
+.plant .site-info .footer-links a {
+	display: inline-block;
+	width: 85px;
+	height: 30px;
+}
+.plant .site-info .footer-links a img{
+	display: inline-block;
+	width: 85px;
+	height: 30px;
+}
+.site-info .slogan {
+    clear: both;
+    margin: 30px auto 0;
+    width: 267px;
+    height: 19px;
+    background: url(../img/slogan2016.png) no-repeat center 0;
+}
