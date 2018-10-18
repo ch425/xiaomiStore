@@ -167,7 +167,7 @@ var register = (function () {
 							_this.registerSuccess(data);
 						}
 					}
-					sendAjax('http://localhost:8080/xiaomi/php/register.php', params);
+					sendAjax('php/register.php', params);
 					this.$tel_inp.onchange = function () {
 						var params = {
 							data: {
@@ -178,7 +178,7 @@ var register = (function () {
 								_this.checkName(data);
 							}
 						}
-						sendAjax('http://localhost:8080/xiaomi/php/check_username.php', params);
+						sendAjax('php/check_username.php', params);
 					}
 				}
 				else {

@@ -37,7 +37,7 @@ var login = (function () {
 							_this.loginSuccess(data);
 						}
 					}
-					sendAjax('http://localhost:80/xiaomi/php/login.php', params);
+					sendAjax('php/login.php', params);
 					localStorage.userid = params.data.username;
 				}
 
